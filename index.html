@@ -1,0 +1,54 @@
+<html>
+    <head>
+     <meta charset="utf-8">
+     <title>War!</title>
+     
+     <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!--Just an experimental project thingy-->
+        <div class="trailer">
+            <video autoplay muted loop="autoplay">
+                <source src="./video/battle.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <!--End of project-->
+        
+        <header>
+            <div class="logo">
+                <img src="./images/guy.jpg"/>
+            </div>
+        </header>
+        <div id="practice" style="font-size:2rem;"></div>
+        <div id="gameBoard" class="flex">
+            <div class="flexColumn">
+                <h1>War!</h1>
+                <h2 id="winner">Winner</h2>
+                <h2>First player has <span id="player1Count"></span> cards.</h2>
+                <h2>Second player has <span id="player2Count"></span> cards.</h2>
+            </div>
+            <div class="flex">
+                <div id="firstPlayer" class="flexColumn player">
+                    <h1>First Player</h1>
+                    <div id="firstPlayerNumber" class="number">
+                    </div>
+                    <div id="firstPlayerSuit" class="suit flex">
+                    </div>
+                </div><!--closes first player-->
+                <h1 id="draw">Draw</h1>
+                <div id="secondPlayer" class="flexColumn player">
+                    <h1>Second Player</h1>
+                    <div id="secondPlayerNumber" class="number">
+                    </div>
+                    <div id="secondPlayerSuit" class="suit">
+                    </div>
+                </div><!--closes second player-->
+            </div><!--closes card area-->
+        </div><!--closes gameboard-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>
